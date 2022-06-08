@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+:root {
+    --red: #F65066;
+    --orange: #E43E2B;
+    --white: #fff;
+    --blue: #76E4FE;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Permanent Marker', cursive;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #21212B;
+}
+
+
+/* HEADER */
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    height: 8vh;
+}
+
+.logo {
+    color: var(--red);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.home {
+    color: var(--red);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-login,
+.btn-cadastrar {
+    color: var(--white);
+    background-color: var(--orange);
+    border-radius: 10px;
+    padding: 4px;
+    text-transform: uppercase;
+    transform: all 0.3s ease-in-out;
+}
+
+.btn-login:hover,
+.btn-cadastrar:hover {
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+
+/* HEADER */
+
+
+/* Formulário Login */
+
+.box-login {
+    background: var(--orange);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+input {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.inputsubmit {
+    background: var(--white);
+    color: var(--orange);
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+.inputsubmit:hover {
+    background: #028d09;
+    color: var(--white);
+}
+
+
+/* Formulário Login */

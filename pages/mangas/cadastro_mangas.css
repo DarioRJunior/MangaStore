@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+:root {
+    --red: #F65066;
+    --orange: #E43E2B;
+    --white: #fff;
+    --blue: #76E4FE;
+    --bg-color: #21212B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Permanent Marker', cursive;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+
+/* HEADER */
+
+header {
+    margin-bottom: 150px;
+}
+
+.logo {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--red);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    height: 8vh;
+}
+
+.bem-vindo {
+    color: var(--white);
+    font-size: 30px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-list a {
+    font-family: 'Permanent Marker', cursive;
+    color: var(--red);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* HEADER */
+
+
+/* Formulário Cadastro */
+
+.box {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg-color);
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+}
+
+fieldset {
+    border: 3px solid var(--blue);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+legend {
+    border: 3px solid var(--blue);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--orange);
+    border-radius: 8px;
+    color: var(--white);
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus~.labelInput,
+.inputUser:valid~.labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: var(--white);
+}
+
+#submit {
+    background: var(--orange);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: var(--white);
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+#submit:hover {
+    background: var(--white);
+    color: var(--orange);
+}
+
+#update {
+    background: var(--orange);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: var(--white);
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+#update:hover {
+    background: var(--white);
+    color: var(--orange);
+}
+
+
+/* Formulário Login */

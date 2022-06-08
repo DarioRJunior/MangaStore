@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+:root {
+    --red: #F65066;
+    --orange: #E43E2B;
+    --white: #fff;
+    --blue: #76E4FE;
+    --bg-color: #21212B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+
+/* HEADER */
+
+header {
+    margin-bottom: 150px;
+}
+
+.logo {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--red);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    height: 8vh;
+}
+
+.bem-vindo {
+    color: var(--white);
+    font-size: 30px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-list a {
+    font-family: 'Permanent Marker', cursive;
+    color: var(--red);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sistema {
+    display: flex;
+    justify-content: space-around;
+    width: 940px;
+    margin: 0 auto;
+    color: #fff;
+    align-items: center;
+    font-family: cursive;
+}
+
+.sistema-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bg-color);
+    width: 940px;
+    padding: 10px;
+}
+
+.sistema-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--blue);
+    width: 1200px;
+    padding: 10px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.table {
+    border: 1px solid var(--orange);
+    width: 1150px;
+    text-align: center;
+}
+
+.table td {
+    font-family: cursive;
+    border: 1px solid var(--orange);
+    padding: 10px;
+}
+
+.btns {
+    width: 100px;
+}
+
+.btnEditar {
+    background-color: #9b111e;
+    color: #fff;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.btnEditar:hover {
+    background-color: #7c0e18;
+}
+
+.btnExcluir {
+    background-color: #9b111e;
+    color: #fff;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.btnExcluir:hover {
+    background-color: #7c0e18;
+}
+
+.btnComprar {
+    background-color: var(--orange);
+    color: #fff;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+
+/* MODAL */
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.mostrar {
+    display: flex;
+}
+
+.modal {
+    position: relative;
+    background: var(--bg-color);
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    border: 5px solid var(--blue);
+    box-shadow: 0 0 0 10px var(--bg-color);
+    border-radius: 10px;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: modal .3s;
+}
+
+.fechar {
+    position: absolute;
+    font-size: 1.2em;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid var(--bg-color);
+    background: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.subtitulo {
+    font-family: cursive;
+    text-align: center;
+    color: var(--orange);
+    font-size: 30px;
+}
+
+.paragrafo {
+    font-family: cursive;
+    text-align: center;
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qnt-relatorio {
+    font-family: cursive;
+    text-align: center;
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.valor-total {
+    font-family: cursive;
+    text-align: center;
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 40px;
+}

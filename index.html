@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangá Store - Home</title>
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/fontes.css">
+    <link rel="stylesheet" href="src/css/index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <h1 class="logo">Mangá Store</h1>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#comecar">Começar</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="pages/login/login.php" id="btn-login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div id="img-banner">
+        </div>
+    </section>
+
+    <section id="comecar">
+        <div class="comecar-container">
+            <h1>Vamos começar</h1>
+            <div class="comecar-conteudo">
+                <p>Bem vindos ao Manga Store seu site de vendas de mangá,</p>
+                <p>Para começar, você tem que criar seu cadastro em nosso site, basta clicar aqui:</p>
+                <a href="pages/cadastros/cadastro.php"><button class="btn-cadastrar">Cadastrar</button></a>
+            </div>
+        </div>
+    </section>
+    <section id="sobre">
+        <div class="sobre-container">
+            <h1>Sobre a Mangá Store</h1>
+            <div class="container">
+                <div class="sobre-conteudo">
+                    <p>A Mangá Store foi criada com o intuido de ajudar quem procura mangás,Aqui teremos um acervo de mangás incríveis e com preços muito melhores que os concorrentes,Além é claro do Frete grátis para todo o Brasil!</p>
+                    <a href="pages/mangas/mangas_sem_login.php"><button class="btn-mangas">Ver Mangás</button></a>
+                </div>
+                <div class="mangas">
+                    <img src="src/img/img-mangas.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe">
+        <div class="equipe-container">
+            <h1>Nossa Equipe</h1>
+            <div class="equipe-conteudo">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://avatars.githubusercontent.com/u/62716267?v=4" alt="Avatar" style="width:250px;height:250px;border-radius: 20px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Dario Junior</h1>
+                            <p>Desenvolvedor Full-Stack</p>
+                            <p>Apaixonado por animes e mangás!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="equipe-conteudo">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="src/img/Gabriel-photo.jpg" alt="Avatar" style="width:250px;height:250px;border-radius: 20px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Gabriel Muniz</h1>
+                            <p>Desenvolvedor Full-Stack</p>
+                            <p>Apaixonado por animes!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p class="copyright"> Dario Junior &copy; 2022 </p>
+    </footer>
+</body>
+
+</html>
