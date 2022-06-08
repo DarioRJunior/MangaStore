@@ -27,13 +27,8 @@ $result = $con->query($sql);
     <header>
         <nav class="menu">
             <h1 class="logo">Mangá Store</h1>
-<<<<<<< HEAD
             <p class="bem-vindo">Bem-vindo a Mangá Store, <?php echo $_SESSION["nome"]; ?></p>
             <img class="avatar" src="<?php echo $_SESSION["avatar"]; ?>" alt="">
-=======
-            <img src="#" alt="" height="50" width="50">
-            <p class="bem-vindo">Bem-vindo a Mangá Store, <?php echo $_SESSION["email_usuario"]; ?></p>
->>>>>>> 50383197deecf458ad4148665449b76325e35cf6
             <ul class="nav-list">
                 <li><a href="../sistema/sistema.php">Voltar</a></li>
                 <li><a href="../login/login.php">Sair</a></li>
@@ -76,15 +71,8 @@ $result = $con->query($sql);
                     $result_valor = $con->query($query_valor);
                     $valor_data = mysqli_fetch_assoc($result_valor);
                     echo "<p class='valor-total'>Valor Total: R$ " . $valor_data['valor_total'] . "</p>";
-
-                    
-                    echo "<button>Baixar relatório</button>";
                     ?>
-<<<<<<< HEAD
                     <button><a href="gerarPdf.php" target="_blank">Baixar relatório</a></button>
-=======
-                    
->>>>>>> 50383197deecf458ad4148665449b76325e35cf6
                 </div>
             </div>
         </section>
