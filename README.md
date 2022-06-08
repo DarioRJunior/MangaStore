@@ -24,7 +24,7 @@ Projeto: 🚀Em andamento
 ## 🖥️ Instruções de instalação
 
 Copie a pasta do projeto dentro do diretório do htdocs dentro do xampp, com o comando
-- git clone https://github.com/DarioRJunior/projeto-manga.git
+- git clone https://github.com/DarioRJunior/MangaStore.git
 
 depois vá para o programa Xampp, clique na aba Bin e digite a seguinte sequencia de comendo para criar o banco de dados:
 - mysql -h localhost -u root
