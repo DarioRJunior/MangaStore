@@ -32,7 +32,7 @@ require('../connection/verifica.php');
             <div class="sistema-box">
                 <div class="sistema-container">
                     <h2>O que deseja fazer?</h2>
-                    <a href="../mangas/mangas_com_login.php">Ver mangás disponíveis</a>
+                    <a href="../mangas/mangas_com_login.php?pagina=1">Ver mangás disponíveis</a>
                     <a href="../relatorio/relatorio.php">Ver relatório</a>
                 </div>
             </div>
