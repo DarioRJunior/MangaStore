@@ -68,7 +68,7 @@ $result = $con->query($sql);
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th scope="col">>Nome</a></th>
+                                    <th scope="col">Nome</a></th>
                                     <th scope="col">Autor</th>
                                     <th scope="col">Editora</th>
                                     <th scope="col">Gênero</th>
