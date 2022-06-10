@@ -6,6 +6,19 @@ if ($_SESSION["UsuarioNivel"] != "ADM") echo "<script>alert('Você não é Admin
 
 $sql = "SELECT * FROM manga ORDER BY idManga ASC";
 
+if (isset($_GET['pagina'])) {
+    $pag = $_GET['pagina'];
+    $busca = "SELECT * FROM manga";
+    $todos = mysqli_query($con, $busca);
+    $registros = "5";
+    $tr = mysqli_num_rows($todos);
+    $tp = ceil($tr / $registros);
+    $inicio = ($registros * $pag) - $registros;
+    $limite = mysqli_query($con, "$busca LIMIT $inicio, $registros");
+    $anterior = $pag - 1;
+    $proximo = $pag + 1;
+}
+
 $result = $con->query($sql);
 
 ?>
@@ -53,7 +66,7 @@ $result = $con->query($sql);
                     </thead>
                     <tbody>
                         <?php
-                        while ($manga_data = mysqli_fetch_assoc($result)) {
+                        while ($manga_data = mysqli_fetch_assoc($limite)) {
                             echo "<tr>";
                             echo "<td>" . $manga_data['nome'] . "</td>";
                             echo "<td>" . $manga_data['autor'] . "</td>";
@@ -79,6 +92,42 @@ $result = $con->query($sql);
                     </tbody>
                 </table>
             </div>
+            <nav class="paginacao-container">
+                        <ul class="pagination">
+                            <?php
+                            if ($pag > 1) {
+                            ?>
+                                <li class="page-item">
+                                    <a class="page-link" href="?pagina=<?= $anterior; ?>" aria-label="Anterior">
+                                        <span aria-hidden="true">Anterior</span>
+                                    </a>
+                                </li>
+                            <?php } ?>
+
+                            <?php
+                            for ($i = 1; $i <= $tp; $i++) {
+                                if ($pag == $i) {
+                                    echo "<li class='page-item active'><a class='page-link' href='?pagina=$i'>$i</a></li>";
+                                } else {
+                                    echo "<li class='page-item'><a class='page-link' href='?pagina=$i'>$i</a></li>";
+                                }
+                            }
+                            ?>
+
+
+
+                            <?php
+                            if ($pag < $tp) {
+                            ?>
+                                <li class="page-item">
+                                    <a class="page-link" href="?pagina=<?= $proximo; ?>" aria-label="Próximo">
+                                        <span aria-hidden="true">Próximo</span>
+
+                                    </a>
+                                </li>
+                            <?php } ?>
+                        </ul>
+                    </nav>
         </div>
     </div>
         </section>
