@@ -93,6 +93,38 @@ header {
     padding: 10px;
 }
 
+.box-search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+#pesquisar {
+    width: 300px;
+    height: 40px;
+    border: 1px solid var(--blue);
+    padding: 10px;
+    font-size: 16px;
+    color: var(--bg-color);
+    background-color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 20px;
+}
+
+.btn-search {
+    color: var(--white);
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    height: 40px;
+    width: 40px;
+    text-transform: uppercase;
+    transform: all 0.3s ease-in-out;
+}
+
 .sistema-container {
     display: flex;
     flex-direction: column;

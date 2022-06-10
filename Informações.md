@@ -1,7 +1,7 @@
 [X] - Login com sessão e com senha (criptografada)
 [X] - Pelo menos 3 cadastros com relatórios
-[] - O relatório deve ter um botão para impressão (pesquisa)
-e opção para exportar os dados (pelo menos em 1 relatório)
+[X] - O relatório deve ter um botão para impressão (pesquisa)
+[X] - e opção para exportar os dados (pelo menos em 1 relatório)
 de salvar em txt
 [] - O relatório deve ter filtros, opçoes de ordenação
 [X] - quantidade de registros mostrados (LIMIT)

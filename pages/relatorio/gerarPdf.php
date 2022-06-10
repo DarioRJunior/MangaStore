@@ -22,7 +22,7 @@ foreach($con->query($relatorio) as $row) {
     $pdf->Cell(100, 10, utf8_decode($row['titulo']), 1, 0, 'C');
     $pdf->Cell(40, 10, utf8_decode($row['quantidade']), 1, 0, 'C');
     $pdf->Cell(40, 10, utf8_decode($row['preco']), 1, 0, 'C');
-    $pdf->Ln(15);
+    $pdf->Ln(10);
 }
 
 $pdf->Output();
