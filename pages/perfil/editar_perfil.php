@@ -51,8 +51,8 @@ if (!empty($_GET['id'])) {
                 <fieldset>
                     <legend><b>Editar seu perfil</b></legend>
                     <br>
-                    <div class="inputBox avatar-box">
-                    <img class="avatar" src="<?php echo $_SESSION["avatar"]; ?>" alt="">
+                    <div class="inputBox">
+                        <img class="avatar" src="<?php echo $_SESSION["avatar"]; ?>" alt="">
                     </div>
                     <br><br>
                     <div class="inputBox">
@@ -61,7 +61,7 @@ if (!empty($_GET['id'])) {
                     </div>
                     <br><br>
                     <div class="inputBox">
-                        <input type="text" name="cpf" id="cpf" maxlength="14" value="<?php echo $cpf ?>" class="inputUser" required>
+                        <input type="text" name="cpf" id="cpf" value="<?php echo $cpf ?>" class="inputUser" required>
                         <label for="cpf" class="labelInput">Cpf</label>
                     </div>
                     <br><br>
@@ -88,6 +88,4 @@ if (!empty($_GET['id'])) {
         alert("Usuário atualizado com sucesso! Faça o login novamente para aplicar as alterações.");
     }
 </script>
-
-<script src="../cadastros/maskcpf.js"></script>
 </html>
