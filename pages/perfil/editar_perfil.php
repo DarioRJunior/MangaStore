@@ -61,7 +61,7 @@ if (!empty($_GET['id'])) {
                     </div>
                     <br><br>
                     <div class="inputBox">
-                        <input type="text" name="cpf" id="cpf" maxlength="14" oninput="maskCPF(this)" value="<?php echo $cpf ?>" class="inputUser" required>
+                        <input type="text" name="cpf" id="cpf" maxlength="14" oninput="maskCPF(this)" value="<?php echo $cpf ?>" onblur="validar()" class="inputUser" required>
                         <label for="cpf" class="labelInput">Cpf</label>
                     </div>
                     <br><br>

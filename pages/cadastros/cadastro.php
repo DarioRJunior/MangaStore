@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
 
     <div class="box-login">
         <div class="box">
-            <form action="cadastro.php" method="POST" enctype="multipart/form-data">
+            <form id="frm" action="cadastro.php" method="POST" enctype="multipart/form-data">
                 <fieldset>
                     <legend><b>Fórmulário de Clientes</b></legend>
                     <br>
@@ -68,7 +68,7 @@ if (isset($_POST['submit'])) {
                     </div>
                     <br><br>
                     <div class="inputBox">
-                        <input type="text" name="cpf" id="cpf" class="inputUser" maxlength="14" oninput="maskCPF(this)" required>
+                        <input type="number" name="cpf" id="cpf" class="inputUser" minlength="14" maxlength="14" oninput="maskCPF(this)" onblur="validar()" required>
                         <label for="cpf" class="labelInput">Cpf</label>
                     </div>
                     <br><br>

@@ -11,7 +11,7 @@ de salvar em txt
 [X] - Não pode usar framework
 [X] - Pode ser em duplas de 2
 [] - Manual em PDF no próprio sistema (para fazer download)
-[] - Não permitir cadastro de pessoas sem cpf e/ou cpfs inválidos
+[X] - Não permitir cadastro de pessoas sem cpf e/ou cpfs inválidos
 [X] - Funções diferentes para adm e users
 
 Versão Final para 13-06
