@@ -1,8 +1,8 @@
 <?php
 include_once('../connection/config.php');
 
-if(isset($_POST['update'])){
-
+if (isset($_POST['update'])) {
+    $id = $_POST['id'];
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $cpf = $_POST['cpf'];
@@ -10,7 +10,6 @@ if(isset($_POST['update'])){
 
     $sqlUpdate = "UPDATE usuario SET nome = '$nome',  email = '$email', cpf = '$cpf', senha = '$senha' WHERE id = '$id'";
     $result = mysqli_query($con, $sqlUpdate);
-
 }
 
 header("Location: ../login/login.php");
