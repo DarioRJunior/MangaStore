@@ -61,7 +61,7 @@ if (!empty($_GET['id'])) {
                     </div>
                     <br><br>
                     <div class="inputBox">
-                        <input type="text" name="cpf" id="cpf" value="<?php echo $cpf ?>" class="inputUser" required>
+                        <input type="text" name="cpf" id="cpf" maxlength="14" value="<?php echo $cpf ?>" class="inputUser" required>
                         <label for="cpf" class="labelInput">Cpf</label>
                     </div>
                     <br><br>
@@ -89,4 +89,5 @@ if (!empty($_GET['id'])) {
     }
 </script>
 
+<script src="../cadastros/maskcpf.js"></script>
 </html>
