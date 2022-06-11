@@ -51,7 +51,7 @@ if (!empty($_GET['id'])) {
                 <fieldset>
                     <legend><b>Editar seu perfil</b></legend>
                     <br>
-                    <div class="inputBox">
+                    <div class="inputBox avatar-box">
                     <img class="avatar" src="<?php echo $_SESSION["avatar"]; ?>" alt="">
                     </div>
                     <br><br>
