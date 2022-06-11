@@ -68,7 +68,7 @@ if (isset($_POST['submit'])) {
                     </div>
                     <br><br>
                     <div class="inputBox">
-                        <input type="text" name="cpf" id="cpf" class="inputUser" required>
+                        <input type="text" name="cpf" id="cpf" class="inputUser" maxlength="14" oninput="maskCPF(this)" required>
                         <label for="cpf" class="labelInput">Cpf</label>
                     </div>
                     <br><br>
@@ -83,5 +83,5 @@ if (isset($_POST['submit'])) {
         </div>
     </div>
 </body>
-
+<script src="maskcpf.js"></script>
 </html>

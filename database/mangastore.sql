@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
     `avatar` varchar(255) NOT NULL,
     `nome` varchar(45) NOT NULL,
     `email` varchar(110) NOT NULL,
-    `cpf` varchar(11) NOT NULL,
+    `cpf` varchar(14) NOT NULL,
     `senha` varchar(15) NOT NULL,
     `nivel` varchar(4),
     PRIMARY KEY (`id`)
@@ -34,7 +34,7 @@ VALUES
         '../../src/img/Foto minha.jpg',
         'Dario',
         'dario@gmail.com',
-        '12345678911',
+        '123.456.789-11',
         '123',
         'ADM'
     ),
@@ -43,7 +43,7 @@ VALUES
         '../../src/img/may.jpg',
         'May',
         'may@hotmail.com',
-        '12354689744',
+        '123.456.729-20',
         '123',
         'USER'
     ),
@@ -52,7 +52,7 @@ VALUES
         '../../src/img/Foto minha.jpg',
         'Rogerio',
         'rogerio@hotmail.com',
-        '12354689744',
+        '123.456.789-15',
         '123',
         'USER'
     ),
@@ -61,7 +61,7 @@ VALUES
         '../../src/img/Foto minha.jpg',
         'Telma',
         'telma@hotmail.com',
-        '12354689744',
+        '123.456.789-24',
         '123',
         'USER'
     );
