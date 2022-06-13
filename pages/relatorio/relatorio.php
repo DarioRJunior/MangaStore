@@ -4,7 +4,7 @@ include_once('../connection/config.php');
 
 if (!empty($_GET['search'])) {
     $data = $_GET['search'];
-    $sql = "SELECT * FROM relatorio WHERE titulo LIKE '%$data%' OR quantidade LIKE '%$data%' OR preco LIKE '%$data%'";
+    $sql = "SELECT * FROM relatorio WHERE titulo LIKE '%$data%' OR quantidade LIKE '%$data%' OR preco LIKE '%$data%' OR data LIKE '%$data%'";
 } else {
     $sql = "SELECT * FROM relatorio WHERE id_usuario = '" . $_SESSION["id_usuario"] . "'";
 }
