@@ -35,7 +35,6 @@ require('../connection/verifica.php');
                     <h2>O que deseja fazer?</h2>
                     <a href="../mangas/mangas_com_login.php?pagina=1">Ver mangás disponíveis</a>
                     <a href="../relatorio/relatorio.php">Ver todas as compras</a>
-                    <a href="../relatorio/teste.php">TESTE</a>
                     <a href="../../src/manual/MangaStore-Manual_do_Sistema.pdf" download="Manual do Sistema">Manual do Sistema</a>
                 </div>
             </div>

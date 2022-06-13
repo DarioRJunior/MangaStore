@@ -104,7 +104,7 @@ function invdata($data)
                     $valor_data = mysqli_fetch_assoc($result_valor);
                     echo "<p class='valor-total'>Valor Total: R$ " . $valor_data['valor_total'] . "</p>";
                     ?>
-                    <button><a href="gerarPdf.php" target="_blank">Baixar relatório</a></button>
+                    <button><a href="gerarPdf.php" target="_blank" class="btn-baixar">Baixar relatório</a></button>
                 </div>
                 </form>
             </div>

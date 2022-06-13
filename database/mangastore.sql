@@ -31,7 +31,7 @@ INSERT INTO
 VALUES
     (
         1,
-        '../../src/img/Foto minha.jpg',
+        '../../src/img/Dario-photo.jpg',
         'Dario',
         'dario@gmail.com',
         '123.456.789-11',
@@ -49,7 +49,7 @@ VALUES
     ),
     (
         3,
-        '../../src/img/Foto minha.jpg',
+        '../../src/img/rogerio-profile.jpg',
         'Rogerio',
         'rogerio@hotmail.com',
         '123.456.789-15',
@@ -58,7 +58,7 @@ VALUES
     ),
     (
         4,
-        '../../src/img/Foto minha.jpg',
+        '../../src/img/telma-profile.jpg',
         'Telma',
         'telma@hotmail.com',
         '123.456.789-24',
@@ -105,7 +105,7 @@ VALUES
         'Tsugumi Ohba e Takeshi Obata',
         'JBC',
         'Misterio, Suspense psicologico, Suspense',
-        'L continua colocando em prática seus planos para capturar Kira, pois ao que parece, este jogo de gato e rato está longe de terminar… Após acontecimentos inesperados, o jovem Light é convidado a se unir à equipe de investigação. De bom grado, Yagami se propõe a ajudar, contando com seus próprios “áses” na manga. Porém, um falso Kira surge. Como isso afetará a disputa entre os dois gênios?',
+        'L continua colocando em pratica seus planos para capturar Kira, pois ao que parece, este jogo de gato e rato esta longe de terminar… Após acontecimentos inesperados, o jovem Light é convidado a se unir à equipe de investigação. De bom grado, Yagami se propõe a ajudar, contando com seus próprios “áses” na manga. Porém, um falso Kira surge. Como isso afetará a disputa entre os dois gênios?',
         '49,90'
     ),
     (

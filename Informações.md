@@ -3,7 +3,7 @@
 [X] - O relatório deve ter um botão para impressão (pesquisa)
 [X] - e opção para exportar os dados (pelo menos em 1 relatório)
 de salvar em txt
-[] - O relatório deve ter filtros, opçoes de ordenação
+[X] - O relatório deve ter filtros, opçoes de ordenação
 [X] - quantidade de registros mostrados (LIMIT)
 [X] - Ao final do relatório mostrar a quantidade de registros
 [X] - O usuário deve ter um avatar (inserido no cadastro)

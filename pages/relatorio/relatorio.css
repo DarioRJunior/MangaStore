@@ -85,7 +85,7 @@ header {
     margin-bottom: 20px;
 }
 
-#ordenar p{
+#ordenar p {
     font-family: 'Permanent Marker', cursive;
     color: var(--red);
     font-weight: bold;
@@ -296,4 +296,27 @@ header {
     height: 100px;
     border-radius: 50%;
     margin-top: 40px;
+}
+
+button {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.btn-baixar {
+    background-color: var(--orange);
+    color: var(--white);
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-baixar:hover {
+    background-color: var(--white);
+    color: var(--orange);
 }
