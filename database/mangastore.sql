@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `manga` (
     `editora` varchar(45) NOT NULL,
     `genero` varchar(45) NOT NULL,
     `sinopse` varchar(255) NOT NULL,
-    `preco` varchar(45) NOT NULL,
+    `preco` DECIMAL(10, 2) NOT NULL,
     PRIMARY KEY (`idManga`)
 ) ENGINE = InnoDB AUTO_INCREMENT = 3 DEFAULT CHARSET = latin1;
 

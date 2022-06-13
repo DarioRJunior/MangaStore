@@ -75,36 +75,42 @@ header {
     text-transform: uppercase;
 }
 
-.box-search {
+.box-ordenar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 8vh;
     margin-bottom: 20px;
 }
 
-#pesquisar {
-    width: 300px;
-    height: 40px;
-    border: 1px solid var(--blue);
-    padding: 10px;
-    font-size: 16px;
-    color: var(--bg-color);
-    background-color: var(--white);
+#ordenar p{
+    font-family: 'Permanent Marker', cursive;
+    color: var(--red);
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-left: 20px;
+    letter-spacing: 4px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
-.btn-search {
-    color: var(--white);
+.btn-ordenar {
     background-color: var(--orange);
-    border: 1px solid var(--orange);
-    height: 40px;
-    width: 40px;
-    text-transform: uppercase;
-    transform: all 0.3s ease-in-out;
+    color: var(--white);
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-ordenar:hover {
+    background-color: var(--white);
+    color: var(--orange);
 }
 
 .sistema {

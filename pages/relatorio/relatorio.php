@@ -2,11 +2,21 @@
 require('../connection/verifica.php');
 include_once('../connection/config.php');
 
-if (!empty($_GET['search'])) {
-    $data = $_GET['search'];
-    $sql = "SELECT * FROM relatorio WHERE titulo LIKE '%$data%' OR quantidade LIKE '%$data%' OR preco LIKE '%$data%' OR data LIKE '%$data%'";
+if (isset($_POST['ASC'])) {
+    $asc_query = "SELECT * FROM relatorio WHERE id_usuario = '" . $_SESSION["id_usuario"] . "' ORDER BY data ASC";
+    $result = $con->query($asc_query);
+}
+
+// Descending Order
+elseif (isset($_POST['DESC'])) {
+    $desc_query = "SELECT * FROM relatorio WHERE id_usuario = '" . $_SESSION["id_usuario"] . "' ORDER BY data DESC";
+    $result = $con->query($desc_query);
+} elseif (isset($_POST['Normal'])) {
+    $default_query = "SELECT * FROM relatorio WHERE id_usuario = '" . $_SESSION["id_usuario"] . "'";
+    $result = $con->query($default_query);
 } else {
-    $sql = "SELECT * FROM relatorio WHERE id_usuario = '" . $_SESSION["id_usuario"] . "'";
+    $default_query = "SELECT * FROM relatorio WHERE id_usuario = '" . $_SESSION["id_usuario"] . "'";
+    $result = $con->query($default_query);
 }
 
 $query_relatorio = "SELECT COUNT(id) AS qnt_relatorio FROM relatorio WHERE id_usuario = '" . $_SESSION["id_usuario"] . "'";
@@ -17,7 +27,6 @@ function invdata($data)
     $parte = explode("-", $data);
     return ($parte[2] . "-" . $parte[1] . "-" . $parte[0]);
 }
-$result = $con->query($sql);
 
 
 ?>
@@ -51,13 +60,14 @@ $result = $con->query($sql);
     <main>
         <section class="sistema">
             <div class="sistema-box">
-                <div class="box-search">
-                    <input type="search" placeholder="Pesquisar" id="pesquisar">
-                    <button onclick="searchData()" class="btn-search">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                        </svg>
-                    </button>
+                <div class="box-ordenar">
+                    <form action="relatorio.php" method="POST">
+                        <div id="ordenar">
+                            <p>Ordenar relatório de compras por:</p>
+                            <input class="btn-ordenar" type="submit" name="Normal" value="Ordem Padrão">
+                            <input class="btn-ordenar" type="submit" name="ASC" value="Compra Mais Antiga">
+                            <input class="btn-ordenar" type="submit" name="DESC" value="Compra Mais Recente">
+                        </div>
                 </div>
                 <div class="sistema-container">
                     <h2>Relátorio de Compras</h2>
@@ -96,6 +106,7 @@ $result = $con->query($sql);
                     ?>
                     <button><a href="gerarPdf.php" target="_blank">Baixar relatório</a></button>
                 </div>
+                </form>
             </div>
         </section>
     </main>
