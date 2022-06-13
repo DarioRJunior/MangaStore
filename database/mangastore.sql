@@ -301,7 +301,7 @@ VALUES
         'O Cao que guarda as Estrelas - Volume unico',
         1,
         '99,90',
-        '2022-05-01',
+        '2022-04-01',
         3
     ),
     (
@@ -309,7 +309,7 @@ VALUES
         'Banana Fish - Volume 1',
         1,
         '139,80',
-        '2022-05-01',
+        '2022-10-01',
         3
     ),
     (
