@@ -167,7 +167,7 @@ VALUES
         'One Piece - Volume 2',
         'Eiichiro Oda',
         'Panini',
-        'Comédia, Fantasia, Ação',
+        'Comedia, Fantasia, Ação',
         'Luffy Chapéu de Palha não está mais sozinho em sua jornada, depois de admitir em sua tripulação o famoso espadachim Roronoa Zoro, o Caça-Piratas! Mas um imprevisto os separa, colocando Luffy no caminho do Bando do Pirata Buggy, o Palhaço, que está aterrorizando uma pequena cidade portuária! E ele também conhece uma misteriosa ladra, que promete muita confusão e trapaças por onde passa.',
         '129,90'
     ),
@@ -253,7 +253,7 @@ VALUES
         'A Menina do Outro Lado - Volume 1',
         1,
         '47,90',
-        '2019-05-01',
+        '2022-05-01',
         2
     ),
     (
@@ -261,7 +261,7 @@ VALUES
         'Boa Noite Punpun - Volume 1',
         1,
         '21,80',
-        '2019-05-01',
+        '2022-06-22',
         2
     ),
     (
@@ -269,7 +269,7 @@ VALUES
         'Happiness - Volume 1',
         1,
         '23,90',
-        '2019-05-01',
+        '2022-05-05',
         2
     ),
     (
@@ -277,7 +277,7 @@ VALUES
         'Jujutsu Kaisen: Batalha de Feiticeiros - Volume 1',
         1,
         '33,90',
-        '2019-05-01',
+        '2022-05-13',
         2
     ),
     (
@@ -285,7 +285,7 @@ VALUES
         'Kimi no Na wa - Volume 1',
         1,
         '29,90',
-        '2019-05-01',
+        '2022-06-13',
         2
     ),
     (
