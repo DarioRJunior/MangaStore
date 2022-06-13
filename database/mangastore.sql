@@ -261,7 +261,7 @@ VALUES
         'Boa Noite Punpun - Volume 1',
         1,
         '21,80',
-        '2022-06-22',
+        '2022-02-22',
         2
     ),
     (
@@ -277,7 +277,7 @@ VALUES
         'Jujutsu Kaisen: Batalha de Feiticeiros - Volume 1',
         1,
         '33,90',
-        '2022-05-13',
+        '2022-06-13',
         2
     ),
     (

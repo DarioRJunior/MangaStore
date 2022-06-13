@@ -16,4 +16,4 @@ if (isset($_POST['update'])) {
 
     $result = mysqli_query($con, $sqlUpdate);
 }
-header("Location: ../mangas/lista_mangas.php");
+header("Location: ../mangas/lista_mangas.php?pagina=1");

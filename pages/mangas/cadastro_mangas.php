@@ -76,11 +76,15 @@ if (isset($_POST['submit'])) {
                         <label for="preco" class="labelInput">Preço</label>
                         <br><br>
                     </div>
-                    <input type="submit" name="submit" id="submit" value="Cadastrar">
+                    <input type="submit" name="submit" id="submit" value="Cadastrar" onclick="mensagem()">
                 </fieldset>
             </form>
         </div>
     </div>
 </body>
-
+<script>
+    function mensagem(){
+        alert("Mangá Registrado com sucesso!");
+    }
+</script>
 </html>

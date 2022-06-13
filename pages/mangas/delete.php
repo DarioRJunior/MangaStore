@@ -12,5 +12,5 @@ if (!empty($_GET['id'])) {
         $resultDelete = $con->query($sqlDelete);
     }
 }
-    header("Location: lista_mangas.php");
+    header("Location: ../mangas/lista_mangas.php?pagina=1");
 ?>
