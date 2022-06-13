@@ -68,7 +68,7 @@ if (isset($_POST['submit'])) {
                     </div>
                     <br><br>
                     <div class="inputBox">
-                        <input type="number" name="cpf" id="cpf" class="inputUser" minlength="14" maxlength="14" oninput="maskCPF(this)" onblur="validar()" required>
+                        <input type="text" name="cpf" id="cpf" class="inputUser" maxlength="14" oninput="maskCPF(this)" onblur="validar()" required>
                         <label for="cpf" class="labelInput">Cpf</label>
                     </div>
                     <br><br>
@@ -77,11 +77,17 @@ if (isset($_POST['submit'])) {
                         <label for="senha" class="labelInput">Senha</label>
                         <br><br>
                     </div>
-                    <input type="submit" name="submit" id="submit" value="Cadastrar">
+                    <input type="submit" name="submit" id="submit" value="Cadastrar" onclick="usuarioCadastrado()">
                 </fieldset>
             </form>
         </div>
     </div>
 </body>
 <script src="maskcpf.js"></script>
+
+<script>
+    function usuarioCadastrado() {
+        alert("Usuário cadastrado com sucesso!");
+    }
+</script>
 </html>
