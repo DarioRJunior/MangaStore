@@ -39,7 +39,7 @@ if ($_SESSION["UsuarioNivel"] != "ADM") echo "<script>alert('Você não é Admin
                     <a href="../mangas/cadastro_mangas.php">Cadastrar novo mangá</a>
                     <a href="../mangas/lista_mangas.php?pagina=1">Ver todos os mangás</a>
                     <a href="../relatorio-clientes/relatorio-clientes.php">Ver usuários cadastrados</a>
-                    <a href="../../src/manual/" download="Manual do Sistema Adiministração">Manual do Sistema Adm</a>
+                    <a href="../../src/manual/MangaStore-Manual_do_Sistema_adm.pdf" download="Manual do Sistema Adiministração">Manual do Sistema Adm</a>
                 </div>
             </div>
         </section>

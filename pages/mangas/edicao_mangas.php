@@ -52,7 +52,7 @@ if (!empty($_GET['id'])) {
     <div class="box">
         <form action="saveEdit.php" method="POST">
             <fieldset>
-                <legend><b>Fórmulário de Anúncios</b></legend>
+                <legend><b>Editar Mangá</b></legend>
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" value="<?php echo $nome ?>" class="inputUser" required>
