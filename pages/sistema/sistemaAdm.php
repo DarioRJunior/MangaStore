@@ -23,9 +23,10 @@ if ($_SESSION["UsuarioNivel"] != "ADM") echo "<script>alert('Você não é Admin
     <header>
         <nav class="menu">
             <h1 class="logo">Mangá Store</h1>
-            <p class="bem-vindo">Bem-vindo a Mangá Store, <?php echo $_SESSION["nome"]; ?></p>
+            <p class="bem-vindo">Bem-vindo a Mangá Store adm, <?php echo $_SESSION["nome"]; ?></p>
             <img class="avatar" src="<?php echo $_SESSION["avatar"]; ?>" alt="">
             <ul class="nav-list">
+                <li><a href="../perfil/editar_perfil_adm.php?id=<?php echo $_SESSION["id_usuario"]; ?>">Editar Perfil</a></li>
                 <li><a href="../login/login.php">Sair</a></li>
             </ul>
         </nav>
