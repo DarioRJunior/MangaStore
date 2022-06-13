@@ -10,7 +10,7 @@ de salvar em txt
 [X] - O tema deve estar relacionado com vendas
 [X] - Não pode usar framework
 [X] - Pode ser em duplas de 2
-[] - Manual em PDF no próprio sistema (para fazer download)
+[X] - Manual em PDF no próprio sistema (para fazer download)
 [X] - Não permitir cadastro de pessoas sem cpf e/ou cpfs inválidos
 [X] - Funções diferentes para adm e users
 
