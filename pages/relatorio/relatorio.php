@@ -11,6 +11,12 @@ if (!empty($_GET['search'])) {
 
 $query_relatorio = "SELECT COUNT(id) AS qnt_relatorio FROM relatorio WHERE id_usuario = '" . $_SESSION["id_usuario"] . "'";
 $query_valor = "SELECT SUM(preco) AS valor_total FROM relatorio WHERE id_usuario = '" . $_SESSION["id_usuario"] . "'";
+
+function invdata($data)
+{
+    $parte = explode("-", $data);
+    return ($parte[2] . "-" . $parte[1] . "-" . $parte[0]);
+}
 $result = $con->query($sql);
 
 
@@ -62,6 +68,7 @@ $result = $con->query($sql);
                                     <th scope="col">Nome</th>
                                     <th scope="col">Quantidade</th>
                                     <th scope="col">Preço</th>
+                                    <th scope="col">Data</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -71,6 +78,7 @@ $result = $con->query($sql);
                                     echo "<td>" . $manga_data['titulo'] . "</td>";
                                     echo "<td>" . $manga_data['quantidade'] . "</td>";
                                     echo "<td>" . $manga_data['preco'] . "</td>";
+                                    echo "<td>" . invdata($manga_data['data']) . "</td>";
                                     echo "</tr>";
                                 }
                                 ?>
