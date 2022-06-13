@@ -1,5 +1,5 @@
 <h1 align="center">
-    Projeto mangá
+    Projeto Mangá Store
 </h1>
 <h4 align="center"> 
 Projeto: 🚀Em andamento
@@ -60,5 +60,3 @@ As seguintes ferramentas foram usadas na construção do projeto:
 Este projeto esta sobe a licença [MIT](./LICENSE).
 
 Feito com ❤️ por Dario Junior 👋🏽 [Entre em contato!](https://www.linkedin.com/in/dariocode/)
-
-# MangaStore
